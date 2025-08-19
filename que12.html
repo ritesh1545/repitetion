@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+
+<body>
+
+    <p>Write javascript program Check weather num is prime or not using while loop </p>
+
+
+
+    <script>
+
+        let num = +prompt("enter a number");
+        let isPrime = true;
+        let i = 2;
+        if (num <= 1) {
+            isPrime = false;
+        } else {
+            while (i <= Math.sqrt(num)) {
+                if (num % i === 0) {
+                    isPrime = false;
+                    break;
+                }
+                i++;
+            }
+        }
+        if (isPrime) {
+            document.write(num + " is prime");
+        } else {
+            document.write(num + " is not prime");
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
