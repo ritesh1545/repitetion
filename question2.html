@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+
+<body>
+
+    <script>
+
+
+        let num = 135;
+        let strNum = num.toString();
+        let sum = 0;
+        for (let i = 0; i < strNum.length; i++) {
+            sum += Math.pow(parseInt(strNum[i]), i + 1);
+        }
+        if (sum === num) {
+            document.write(num + " is a Disarium number.");
+        } else {
+            document.write(num + " is not a Disarium number.");
+        }
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

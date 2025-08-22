@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let num = 384;
+        let lastDigit = num % 10;
+        let firstDigit = num;
+        while (firstDigit >= 10) {
+            firstDigit = Math.floor(firstDigit / 10);
+        }
+        let sum = firstDigit + lastDigit;
+        document.write("The sum of the first and the last digit:", sum);
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
